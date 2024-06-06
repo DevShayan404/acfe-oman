@@ -1,0 +1,221 @@
+<section>
+  <div class="banner_section">
+    <div class="banner_bg">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <div class="banner-bg-3"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-bg-1"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-bg-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-7">
+          <div class="banner_content">
+            <h6>WELCOME TO THE</h6>
+            <h1>
+              Association of Certified Fraud Examiners Oman Chapter (ACFE OMAN)
+            </h1>
+            <p>
+              The OMAN ACFE Annual Conference is back, and it’s better than
+              ever! This year, the conference will be held in person and will
+              feature a variety of industry experts discussing topics related to
+              fraud, investigation, and prevention.
+            </p>
+            <div class="banner_button">
+              <button class="btn_fill">ABOUT</button>
+              <button class="btn_light">SEE MEMBER BENEFITS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container section-padding">
+    <div class="row align-items-start">
+      <div class="col col-lg-6">
+        <!-- <div class="col position-relative ps-lg-0 ps-0 mb-3"> -->
+        <div class="px-5">
+          <img
+            src="assets\images\about.jpg"
+            alt=""
+            class="img-fluid shadow-single-left"
+          />
+        </div>
+        <!-- </div> -->
+      </div>
+      <div class="col col-lg-6">
+        <h6><b>ABOUT</b></h6>
+        <h1>Anti-Fraud Organisation</h1>
+        <p>
+          The ACFE is the world’s largest anti-fraud organisation and premier
+          provider of anti-fraud training and education. With 90,000+ members,
+          the ACFE is reducing business fraud world-wide and inspiring public
+          confidence in the integrity and objectivity within the profession.
+        </p>
+
+        <ul class="pt-3">
+          <li class="py-1">
+            <p>
+              <b>CORRUPTION -</b> Giving people the skills to keep organisations
+              safe
+            </p>
+          </li>
+          <li class="py-1">
+            <p>
+              <b>CYBER CRIME -</b> Using the latest technology to fight threats
+            </p>
+          </li>
+          <li class="py-1">
+            <p><b>MONEY LAUNDERING -</b> Tracing the Proceeds of Crime</p>
+          </li>
+        </ul>
+        <p class="mt-5">
+          <b
+            >Don’t miss this years in person Annual Conference on 16th November
+            2023.</b
+          >
+        </p>
+        <button class="btn_fill">READ MORE</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="our-portfolio-home">
+    <div class="container section-padding">
+      <div class="row gx-4">
+        <div class="col-8">
+          <div class="third_section_media_left">
+            <div class="row">
+              <div class="col-8">
+                <h6><b>CERTIFIED FRAUD EXAMINER</b></h6>
+                <h1>Become a CFE</h1>
+              </div>
+              <div class="col-4 d-flex justify-content-end">
+                <img
+                  width="100"
+                  src="assets\images\acfe-logo.png"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <p class="mt-3">
+              A core objective of the ACFE is to provide the worldwide market
+              with credible and competent anti-fraud professionals. The key to
+              the ACFE’s value is a single benchmark for all, a common pool of
+              knowledge, a common set of principles and a united body.
+            </p>
+            <button class="btn_light">
+              <a
+                href="https://www.acfe.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LEARN MORE</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="third_section_media_right">
+            <h6><b> MY GLUE PROFILE</b></h6>
+            <h2>View & update your personal information</h2>
+            <a><b>My Glue Profile</b></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div
+    class="newsletter"
+    style="background-image: url('../../../assets/images/get-free-bg.png')"
+  >
+    <div class="container g-0">
+      <div class="row g-0 d-flex align-items-center">
+        <div class="col-6">
+          <h1>STAY UP TO DATE</h1>
+        </div>
+        <div class="col-6">
+          <form>
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="bi bi-envelope"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Business Mail"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <button class="btn_fill">SIGN UP</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="news" style="background-color: #ef054812">
+    <div class="container section-padding">
+      <div class="row">
+        <div class="col-12">
+          <h6>BLOG & NEWS</h6>
+          <h1>Latest Blog & News</h1>
+        </div>
+      </div>
+      <div class="row pt-5 gy-4 gx-3">
+        @for (item of blog; track $index) {
+        <div class="col-3">
+          <div class="blog-item blog-item-three">
+            <div class="blog-featured-thumb">
+              <div class="media overflow-hidden">
+                <img [src]="item?.src" alt="" />
+              </div>
+              <div class="date">
+                <span>{{ item?.day }}</span>
+                <span>{{ item?.month }}</span>
+                <span>{{ item?.year }}</span>
+              </div>
+            </div>
+
+            <div class="content p-3">
+              <div class="post-author mb-2">
+                <h6>BUSSINESS</h6>
+              </div>
+
+              <h5>{{ item?.name }}</h5>
+
+              <!-- <div class="btn-link-share mt-xs-10 mt-sm-10 mt-15"> -->
+              <button class="btn_fill">
+                <a>Read More <i class="bi bi-arrow-right ms-2"></i></a>
+              </button>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
